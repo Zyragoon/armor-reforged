@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "armor-reforged",
+	"version": "${version}",
+	"name": "Armor Reforged",
+	"description": "A mod that adds new armor materials and items to Minecraft.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/armor-reforged/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"zyra.armor_reforged.ArmorReforged"
+		],
+		"fabric-datagen": [
+			"zyra.armor_reforged.ArmorReforgedDataGenerator"
+		],
+		"client": [
+			"zyra.armor_reforged.ArmorReforgedClient"
+		]
+	},
+	"mixins": [
+		"armor-reforged.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
