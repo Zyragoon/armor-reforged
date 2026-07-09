@@ -5,7 +5,8 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import zyra.block.ModBlocks;
-import zyra.items.ModItems;
+import zyra.item.ModItemGroups;
+import zyra.item.ModItems;
 
 public class ArmorReforged implements ModInitializer {
 	public static final String MOD_ID = "armor_reforged";
@@ -19,6 +20,9 @@ public class ArmorReforged implements ModInitializer {
 	public void onInitialize() {
 		ModItems.initialize();
 		ModBlocks.initialize();
+		ModItemGroups.initialize();
+
+
 
 	}
 }
